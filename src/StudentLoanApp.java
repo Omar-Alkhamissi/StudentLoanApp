@@ -1,11 +1,3 @@
-/**
- * Program Name: StudentLoanApp.java
- * Purpose:		 To create a graphical user interface for a student loan application, 
- * 				 allowing users to input student information and calculate loan payments.  		
- * @author: 	 Omar Alkhamissi
- * Date:		 Feb 25, 2024
- */
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -45,7 +37,7 @@ public class StudentLoanApp extends JFrame implements JSLoanPayable {
         students = new ArrayList<>();
         currentStudentIndex = 0;
 
-        titleLabel = new JLabel("This is Omar Alkhamissi's Student Loan Calculator");
+        titleLabel = new JLabel("Student Loan Calculator");
         add(titleLabel, BorderLayout.NORTH);
 
         JPanel mainPanel = new JPanel(new GridLayout(1, 2, 10, 10));
@@ -393,7 +385,7 @@ public class StudentLoanApp extends JFrame implements JSLoanPayable {
      */
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            StudentLoanApp app = new StudentLoanApp("Omar Alkhamissi - Student Loan Calculator");
+            StudentLoanApp app = new StudentLoanApp("Student Loan Calculator");
             app.setVisible(true);
         });
     }

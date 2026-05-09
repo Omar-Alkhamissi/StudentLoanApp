@@ -1,12 +1,3 @@
-/**
- * Program Name: Student.java
- * Purpose: 	 To define a Student class that encapsulates the details of a student, 
- * 				 including personal information and loan amounts, providing a model for storing 
- * 				 and manipulating student data.  	 
- * @author 		 Omar Alkhamissi
- * Date: 		 Feb 25, 2024
- */
-
 public class Student {
     private final String studentID;
     private String surname;
